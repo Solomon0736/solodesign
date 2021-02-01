@@ -21,29 +21,24 @@ public class Model {
                     String strSelect = "select body from story where id = " + currentRoom;
 
                     ResultSet rset = stmt.executeQuery(strSelect);
-
-                    // Loop through the result set and print
-                    //System.out.println("The records selected are:");
                     while (rset.next()) {
                         String body = rset.getString("body");
                         System.out.println(body);
                     }
 
-                    strSelect = "select description, story_id from links where storyId = " + currentRoom;
-                    //System.out.println("The SQL statement is: " + strSelect + "\n");
+                    strSelect = "select description, story_id,target_id from links where story_id = " + currentRoom;
 
                     rset = stmt.executeQuery(strSelect);
-                    ArrayList<Integer> story_id = new ArrayList();
+                    ArrayList<Integer> storyLinks = new ArrayList();
 
                     int rowCount = 1;
                     while (rset.next()) {
                         String description = rset.getString("description");
-                      //  int target_id = rset.getInt("target_id");
-                      //  target_id.add(target_id);
                         int story_id = rset.getInt("story_id");
-                        story_id.add(story_id);
-                        System.out.println(rowCount + " " + description);
-                        ++rowCount;
+                        storyLinks.add(story_id);
+
+                        System.out.println(++rowCount + " " + description);
+
                     }
 
                     if (rowCount == 1) {
@@ -60,7 +55,13 @@ public class Model {
                         }
                         currentRoom = storyLinks.get(input - 1);
                     }
-                }
+
+                    if (rowCount == 1) {
+                        System.out.println("Thanks for playing...");
+                        currentRoom = 2;
+                    }
+
+                    }
                 // Close conn and stmt
                 conn.close();
                 stmt.close();
