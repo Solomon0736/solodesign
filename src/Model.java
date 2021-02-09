@@ -8,6 +8,7 @@ public class Model {
         String password = "password";
 /**
  * Jag har fått alternativerna på frågorna som fanns i databassen
+ *
  */
         try {
             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/exempel? " +
@@ -57,9 +58,21 @@ public class Model {
                     currentRoom = storyLinks.get(input -1);
                 }
 
-                if (rowCount == 1) {
-                    System.out.println("Thanks for playing...");
-                    currentRoom = 3;
+                if (rowCount == 2) {
+
+                    while (rset.next()) {
+                        String description = rset.getString("description");
+                        int story_id = rset.getInt("story_id");
+                        storyLinks.add(story_id);
+
+                        System.out.println(++rowCount + " " + description);
+
+
+                        System.out.println("Thanks for playing...");
+                       // String strSelect = "select body from story where id = " + currentRoom;
+
+                        currentRoom = 4;
+                    }
                 }
             }
             // Close conn and stmt

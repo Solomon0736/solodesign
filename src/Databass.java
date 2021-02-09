@@ -56,10 +56,10 @@ public class Databass {
                         "VALUES ('"+body+"')";
                 stmt.executeUpdate(SQLQuery);
 
-                System.out.println("Ange pris:");
+                /*System.out.println("Ange pris:");
                 int price = in.nextInt();
                 SQLQuery = "UPDATE INTO story(body) " +
-                        "VALUES ('"+body+"')";
+                        "VALUES ('"+body+"')";*/
                 stmt.executeUpdate(SQLQuery);
 
                 stmt.close();
