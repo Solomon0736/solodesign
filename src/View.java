@@ -1,8 +1,10 @@
 import javax.swing.*;
+import javax.xml.stream.events.StartDocument;
 import java.awt.*;
 import java.awt.event.*;
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class View {
     private JButton val1;
@@ -11,40 +13,16 @@ public class View {
     String password = "password";
     private JTextField textField;
     int currentRoom = 1;
+    ArrayList<Integer> storyLinks = new ArrayList();
 
     public View() {
         JFrame frame = new JFrame("Main");
         frame.setContentPane(this.tabel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
-        frame.setSize(400, 300);
+        frame.setSize(600, 400);
         frame.setVisible(true);
-        try {
-
-
-            Connection conn = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/exempel? " +
-                            "allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
-                    "solomon", password);
-            Statement stmt = conn.createStatement();
-            String SQLQuery = "select body from story where id = " + currentRoom;
-
-            ResultSet rset = stmt.executeQuery(SQLQuery);
-            while (rset.next()) {
-                String body = rset.getString("body");
-                textField.setText(textField.getText() + "\n\n" + body);
-
-            }
-
-            conn.close();
-            stmt.close();
-        } catch (SQLException e) {
-            e.printStackTrace();
-
-        }
-
-        // Close conn and stmt
-
+        update();
 
         textField.addActionListener(new ActionListener() {
 
@@ -56,46 +34,69 @@ public class View {
          * Jag har skapat två click knappar som kommer vara alternativena för projektet
          */
 
-
-        try {
-            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/exempel? " +
-                    "allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC", "solomon", password);
-            Statement stmt = conn.createStatement();
-            String strSelect = "select description, story_id,target_id from links where story_id = " + currentRoom;
-
-            ResultSet next = stmt.executeQuery(strSelect);
-            ArrayList<Integer> storyLinks = new ArrayList();
-            while (next.next()) {
-                String description = next.getString("description");
-                int target_id = next.getInt("target_id");
-
-                if (target_id == 7) {
-                    System.out.println("prova igen");
-                    storyLinks.add(target_id);
-                    val1.setText(val1.getText() + "\n\n" + description);
-
-                    val2.setText(val2.getText() + "\n\n" + description);
-
-                }
-            }
-
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
         val1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
+            // Sätt current room och gör update
+                currentRoom = storyLinks.get(0);
+                update();
             }
+
+
         });
         val2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-
+                currentRoom = storyLinks.get(1);
+                update();
             }
         });
 
 
     }
+
+    private void update() {
+        try {
+            Connection conn = DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3306/exempel? " +
+                            "allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+                    "solomon", password);
+            Statement stmt = conn.createStatement();
+
+            String SQLQuery = "select body from story where id = " + currentRoom;
+
+            ResultSet rset = stmt.executeQuery(SQLQuery);
+            while (rset.next()) {
+                String body = rset.getString("body");
+                textField.setText(body);
+            }
+/**
+ * den skapar alternativerna och body samtidigt.
+ *
+ */
+            String strSelect = "select description, target_id from links where story_id = " + currentRoom;
+            storyLinks.removeAll(storyLinks);
+            //int currentRoom = 1;
+            rset = stmt.executeQuery(strSelect);
+
+            rset.next();
+            String description = rset.getString("description");
+            val1.setText(description);
+            int target_id = rset.getInt("target_id");
+            storyLinks.add(target_id);
+
+            rset.next();
+            description = rset.getString("description");
+            val2.setText(description);
+            target_id = rset.getInt("target_id");
+            storyLinks.add(target_id);
+            conn.close();
+            stmt.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
 
     {
 // GUI initializer generated by IntelliJ IDEA GUI Designer

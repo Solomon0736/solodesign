@@ -5,6 +5,6 @@ public class Controller {
     public Controller( View view) {
 
       //  this.model = model;
-        this.view = view;
+        this.view= view;
     }
 }
