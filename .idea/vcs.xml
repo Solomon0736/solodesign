@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/logboken2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/loggbok" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/loggbok/loggbok" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/loggboken" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/nodetest" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/solo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/speldesign-curly-pirates" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/te18-speltut" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/wsp1-bootstrap" vcs="Git" />
+  </component>
+</project>

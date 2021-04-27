@@ -1,0 +1,10 @@
+dec 17, 2020 5:24:58 EM main main
+VARNING: warning msg
+dec 17, 2020 5:24:58 EM main main
+ALLVARLIG: sever msg
+dec 17, 2020 5:25:58 EM main main
+VARNING: warning msg
+dec 17, 2020 5:30:05 EM main main
+VARNING: warning msg
+dec 17, 2020 5:30:36 EM main main
+VARNING: warning msg

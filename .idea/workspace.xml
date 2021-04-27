@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0f13bb4e-b2ce-4a7e-b283-69939c5deea9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/loggbok/loggbok/.idea/libraries/mysql_connector_java_8_0_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wsp1-bootstrap/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wsp1-bootstrap/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wsp1-bootstrap/bin/www" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wsp1-bootstrap/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wsp1-bootstrap/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wsp1-bootstrap/public/stylesheets/style.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wsp1-bootstrap/routes/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wsp1-bootstrap/routes/users.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wsp1-bootstrap/views/error.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wsp1-bootstrap/views/index.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wsp1-bootstrap/views/layout.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wsp1-bootstrap/views/nav.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loggbok/loggbok/loggbok.iml" beforeDir="false" afterPath="$PROJECT_DIR$/loggbok/loggbok/loggbok.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loggbok/loggbok/out/production/loggbok/Lista.class" beforeDir="false" afterPath="$PROJECT_DIR$/loggbok/loggbok/out/production/loggbok/Lista.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loggbok/loggbok/out/production/loggbok/loggtable$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/loggbok/loggbok/out/production/loggbok/loggtable$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loggbok/loggbok/out/production/loggbok/loggtable.class" beforeDir="false" afterPath="$PROJECT_DIR$/loggbok/loggbok/out/production/loggbok/loggtable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loggbok/loggbok/src/Lista.java" beforeDir="false" afterPath="$PROJECT_DIR$/loggbok/loggbok/src/Lista.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loggbok/loggbok/src/loggtable.form" beforeDir="false" afterPath="$PROJECT_DIR$/loggbok/loggbok/src/loggtable.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loggbok/loggbok/src/loggtable.java" beforeDir="false" afterPath="$PROJECT_DIR$/loggbok/loggbok/src/loggtable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loggboken/src/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/loggboken/src/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loggboken/src/Database/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/loggboken/src/Database/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loggboken/src/Entry.java" beforeDir="false" afterPath="$PROJECT_DIR$/loggboken/src/Entry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loggboken/src/File.java" beforeDir="false" afterPath="$PROJECT_DIR$/loggboken/src/File.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loggboken/src/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/loggboken/src/Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nodetest/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/nodetest/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nodetest/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/nodetest/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nodetest/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/nodetest/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nodetest/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/nodetest/routes/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nodetest/views/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/nodetest/views/index.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nodetest/views/nav.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/speldesign-curly-pirates/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/speldesign-curly-pirates/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speldesign-curly-pirates/src/gameOverScene.js" beforeDir="false" afterPath="$PROJECT_DIR$/speldesign-curly-pirates/src/gameOverScene.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speldesign-curly-pirates/src/menuScene.js" beforeDir="false" afterPath="$PROJECT_DIR$/speldesign-curly-pirates/src/menuScene.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speldesign-curly-pirates/src/playScene.js" beforeDir="false" afterPath="$PROJECT_DIR$/speldesign-curly-pirates/src/playScene.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/te18-speltut/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/te18-speltut/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/te18-speltut/phaser-3/part4.html" beforeDir="false" afterPath="$PROJECT_DIR$/te18-speltut/phaser-3/part4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wsp1-bootstrap/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wsp1-bootstrap/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/wsp1-bootstrap/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/logboken2" />
+  </component>
+  <component name="ProjectId" id="1ln8xoGgUUzL0SKy2lUfpSYXunx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager">
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main" />
+      <module name="öva" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0f13bb4e-b2ce-4a7e-b283-69939c5deea9" name="Default Changelist" comment="" />
+      <created>1608221743576</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608221743576</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="71" key="#Project_Structure" timestamp="1608221758383">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="71" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1608221758383" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1608222636011">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608222636011" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1608222636010">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1608222636010" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1608222636010">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1608222636010" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1608222636010">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1608222636010" />
+    <state x="51" y="189" key="run.anything.popup" timestamp="1608221917621">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="51" y="189" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1608221917621" />
+  </component>
+</project>
