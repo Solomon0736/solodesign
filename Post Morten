@@ -1,0 +1,43 @@
+
+Titel
+
+#, Soläventyr spel
+Författare och datum.
+Solomon Tikabo 2021-03-01
+
+Inledning
+
+#, Syfte med arbete är att skapa ett soloäventyr spel och det är att man ställer frågor med alternativ. Om man svar på rätt alternative får gå vidare till nästa spelet och om man får fel svar då spelar man om. Mina alternative frågorna kom vara i en knapp som man kan trycka istället att man väljer 0 och 1 siffror. Jag kommer utvekla nästa vecka editor genom att skapa en knapp som kan lägga texter till databasen.  
+
+Bakgrund
+
+#, Soloäventyr kommer innehålla av två saker den ena är själva spelet som man spelar och den andra blir edit för att lägga texter till databasen från intellij.
+Jag har använt mysql,ubuntu och intellij som hjälpmedel för projektet. I mysql skriver man en kort historia där man ställer frågor och alternativ.
+Jag har ritat två tabeller i tableplus mappen. Den ena tabellen är är story och i 
+story finns det id(skriver siffror) och body. I body skriver man frågor om spelet som. Den andra mappen heter Links och i den finns det fyra colomer eller saker.
+De är id, story_id,target_id och description. I id skriver man siffror på varje råd och i description skriver man dem två alternativ på frågorna.
+I targe_id och story_id skriver man var ska den hamna när man svarar antingen rätt eller fel svar. 
+Ubuntu startar om tabel plus som har mysql i den. I intellij har vi använt alla code som behövs för att generera spelet. 
+
+Min planering i mitt arbete var att skapa en tabell som visar frågorna på spelet och två knappar som man kan välja alternativen. Jag har ritat en tabellen i GUI 
+som visar frågorna som kommer från databasen och två knappar. Det gick gick ganska fort att göra det. Jag hade gjort ett soloäventyr spel innan jag jobbade med den
+har spelet. I den första spelet var att man kan välja alternativen i intellij och att man skriver 1 eller 2 för att köra spelet.
+Det gick ganska bra med spelet fast jag har lite kvar att bygga upp spelet men annars funkar att spela det i GUI.  
+ 
+Positiva erfarenheter
+
+#, I spelet har gått bra med att rita spelet i GUI och kunna se det på skärmen. Det var inte svårt att koppla upp spelet från intellij till databasen för visste det innan
+hur man gör det. Även det var inte svårt att skriva texten till databasen för jag hade lärt mig hur man gör det i programmering. 
+
+Negativa erfarenheter
+
+#, Den som har gått mindre bra i spelet var att jag hade gjort alla mina kodning i en mapp vilket är inte bra att göra det. Man måste använda MVC för varje mapp har 
+egen grej som ska göra om man har fått nånting fel de vet man vilket mapp som är knasig.Just nu håller på fördela i MVC för att bli lättare att läsa för mig och kunna söka enkelt när jag får nåt fel i spelet.
+
+Sammanfattning
+
+#, Jag har lärt mig hur kan man göra ett spel med alternativ och hur ska man gå vidare antingen när man får rätt eller fel svar. Jag har lärt mig mer hur kan man koppla 
+intellij till databasen. Mitt spel är nästan färdigt för jag håller fixa lite saker men det går att spela det. Jag kommer fördela min code till MVC och ändra på editor så 
+att kan skriva iGUI istället i intellij. Jag skulle vidareutveckla spelet genom att är på bakgrund och kunna lägga tidtagning för att man ska inte sitta med det längre tid.
+
+
